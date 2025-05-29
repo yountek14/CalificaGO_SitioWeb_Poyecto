@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Horario - Califica GO</title>
+  <link rel="stylesheet" href="/CSS/horario.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h1><a href="/HTML/index.html">Califica GO</a></h1>
+      <ul>
+        <li><a href="/HTML/inicio.html">Inicio</a></li>
+        <li><a href="/HTML/funcionalidades.html">Funcionalidades</a></li>
+        <li><a href="/HTML/contacto.html">Contacto</a></li>
+        <li><a href="/HTML/horario.html">Horario</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="content">
+    <h2>Mi horario semanal</h2>
+    <button id="descargar-btn">Descargar horario como imagen</button>
+    <div class="tabla-container">
+      <table id="tabla-horario">
+        <thead>
+          <tr>
+            <th>Hora</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miércoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Rango horario ejemplo -->
+          <tr>
+            <td>08:00</td>
+            <td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr>
+            <td>09:00</td>
+            <td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr>
+            <td>10:00</td>
+            <td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <!-- Puedes agregar más filas -->
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <script src="/horario.js"></script>
+  <!-- Librería para capturar en imagen -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="/horario.js"></script>
+
+</body>
+</html>

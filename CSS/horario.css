@@ -1,0 +1,76 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f4ff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #5c6bc0;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  color: white;
+  z-index: 999;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.content {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  height: 50px;
+  cursor: pointer;
+}
+
+td:hover {
+  background-color: #e8eaf6;
+}
+#descargar-btn {
+  background-color: #5c6bc0;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#descargar-btn:hover {
+  background-color: #3f51b5;
+}
