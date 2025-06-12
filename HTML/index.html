@@ -1,31 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Califica GO</title>
-    <link rel="stylesheet" href="\CSS\style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Califica GO</title>
+  <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
-    <header>
-    <nav>
-      <h1><a href="/HTML/index.html">Califica GO</a></h1>
-      <ul>
-        <li><a href="/HTML/inicio.html">Inicio</a></li>
-        <li><a href="/HTML/funcionalidades.html">Funcionalidades</a></li>
-        <li><a href="/HTML/contacto.html">Contacto</a></li>
-        <li><a href="/HTML/horario.html">Horario</a></li>
-      </ul>
-    </nav>
+
+  <!-- Header con logo centrado -->
+  <header>
+    <h1><a href="/HTML/index.html">Califica GO</a></h1>
+    <label class="switch">
+      <input type="checkbox" id="toggleModoOscuro">
+      <span class="slider"></span>
+    </label>
   </header>
 
-  <section class="content">
-    <h2>Bienvenido a Califica GO</h2>
-    <p>Desliza hacia abajo para ver cómo el header se mantiene fijo.</p>
-    <p>Este espacio puede tener info sobre cómo funciona la app, capturas, beneficios, etc.</p>
-    <!-- contenido de demostración -->
-  </section>
+  <!-- Contenido principal -->
+  <section class="bienvenida">
+    <div class="contenido">
+      <h2>Bienvenido</h2>
+      <p>Organiza tus notas, calcula promedios y mantente al día con tus evaluaciones.</p>
 
-    
+      <!-- Botones de navegación -->
+      <div class="botones-navegacion">
+        <a href="/HTML/inicio.html" class="btn">Inicio</a>
+
+      </div>
+    </div>
+
+    <div class="imagen">
+      <img src="../img/73ddc4133109139.61b6f769b8236.jpg" alt="Ilustración de estudiantes" />
+    </div>
+  </section>
+  
+  <script>
+  const toggle = document.getElementById("toggleModoOscuro");
+
+  toggle.addEventListener("change", () => {
+    document.body.classList.toggle("modo-oscuro");
+  });
+</script>
+
+
 </body>
 </html>

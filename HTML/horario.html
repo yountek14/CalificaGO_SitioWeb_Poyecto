@@ -15,8 +15,13 @@
         <li><a href="/HTML/funcionalidades.html">Funcionalidades</a></li>
         <li><a href="/HTML/contacto.html">Contacto</a></li>
         <li><a href="/HTML/horario.html">Horario</a></li>
+        
       </ul>
     </nav>
+    <label class="switch">
+      <input type="checkbox" id="toggleModoOscuro">
+      <span class="slider"></span>
+    </label>
   </header>
 
   <section class="content">
@@ -58,6 +63,14 @@
   <!-- Librería para capturar en imagen -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script src="/horario.js"></script>
+
+<script>
+  const toggle = document.getElementById("toggleModoOscuro");
+
+  toggle.addEventListener("change", () => {
+    document.body.classList.toggle("modo-oscuro");
+  });
+</script>
 
 </body>
 </html>

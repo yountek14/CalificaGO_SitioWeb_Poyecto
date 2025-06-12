@@ -8,21 +8,33 @@
 <body>
 
   <header>
-    <nav>
-      <h1><a href="/HTML/index.html">Califica GO</a></h1>
-      <ul>
-        <li><a href="/HTML/inicio.html">Inicio</a></li>
-        <li><a href="/HTML/funcionalidades.html">Funcionalidades</a></li>
-        <li><a href="/HTML/contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
+    <h1><a href="/HTML/index.html">Califica GO</a></h1>
+    <label class="switch">
+      <input type="checkbox" id="toggleModoOscuro">
+      <span class="slider"></span>
+    </label>
+    
   </header>
 
   <section class="bienvenida">
-    <h2>Bienvenido a Califica GO</h2>
-    <p>La app perfecta para controlar tus calificaciones, saber cuánto necesitas para aprobar y tener todo a la mano.</p>
+  <h2>Bienvenido a Califica GO</h2>
+  <p>La app perfecta para controlar tus calificaciones, saber cuánto necesitas para aprobar y tener todo a la mano.</p>
+  
+  <div class="botones-navegacion">
     <a class="btn" href="index.html">Ir al Panel Principal</a>
-  </section>
+    <a class="btn" href="/HTML/funcionalidades.html">Funcionalidades</a>
+    <a class="btn" href="/HTML/contacto.html">Contacto</a>
+  </div>
+</section>
+
+
+  <script>
+  const toggle = document.getElementById("toggleModoOscuro");
+
+  toggle.addEventListener("change", () => {
+    document.body.classList.toggle("modo-oscuro");
+  });
+</script>
 
 </body>
 </html>

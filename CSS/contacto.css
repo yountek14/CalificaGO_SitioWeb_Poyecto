@@ -9,26 +9,30 @@ body {
 }
 
 header {
-  background-color: #5c6bc0;
-  padding: 15px 20px;
   position: sticky;
   top: 0;
+  background-color: #5c6bc0;
   color: white;
-  z-index: 999;
+  padding: 15px 20px;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+/* Barra de navegación */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/* Logo / nombre del sitio */
 nav h1 a {
-  color: rgb(255, 255, 255);
+  color: white;
   text-decoration: none;
   font-size: 1.5rem;
 }
 
+/* Menú de navegación */
 nav ul {
   list-style: none;
   display: flex;
@@ -39,6 +43,7 @@ nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s;
 }
 
 nav ul li a:hover {
