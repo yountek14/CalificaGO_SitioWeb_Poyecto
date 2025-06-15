@@ -6,21 +6,62 @@
   <link rel="stylesheet" href="/CSS/contacto.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <h1><a href="/HTML/index.html">Califica GO</a></h1>
-      <ul>
-        <li><a href="/HTML/inicio.html">Inicio</a></li>
-        <li><a href="/HTML/funcionalidades.html">Funcionalidades</a></li>
-        <li><a href="/HTML/contacto.html">Contacto</a></li>
-        <li><a href="/HTML/horario.html">Horario</a></li>
-      </ul>
-    </nav>
-  </header>
+<header>
+  <nav>
+    <h1><a href="/HTML/index.html">Califica GO</a></h1>
+    <label class="switch">
+      <input type="checkbox" id="toggleModoOscuro">
+      <span class="slider"></span>
+    </label>
+  </nav>
+</header>
 
-  <section class="content">
-    <h2>Contacto</h2>
-    <p>Puedes contactarnos al correo: contacto@calificago.cl</p>
-  </section>
+<div class="flecha-volver">
+  <a href="javascript:history.back()">⬅ Volver</a>
+</div>
+
+<section class="content">
+  <h2>Contacto</h2>
+  
+  <div class="contacto-container">
+    <div class="contacto-info">
+      <p>Puedes contactarnos al correo: <strong>contacto@calificago.cl</strong></p>
+    </div>
+    
+    <!-- Espacio para imagen -->
+    <div class="imagen-contacto">
+      <img src="/img/fotoredesociales.jpg" alt="Imagen decorativa">
+      <!-- Aquí puedes agregar tu imagen -->
+      <!-- <img src="/img/tu-imagen.jpg" alt="Imagen decorativa"> -->
+    </div>
+  </div>
+
+  <!-- Iconos redes sociales -->
+  <div class="redes-sociales">
+    <div class="icono">
+      <img src="/img/Youtube_logo.png" alt="YouTube">
+      <span class="tooltip">Próximamente</span>
+    </div>
+    <div class="icono">
+      <img src="/img/Facebook_logo_(square).png" alt="Facebook">
+      <span class="tooltip">Próximamente</span>
+    </div>
+    <div class="icono">
+      <img src="/img/Instagram_logo_2022.svg.png" alt="Instagram">
+      <span class="tooltip">Próximamente</span>
+    </div>
+    <div class="icono">
+      <img src="/img/tiktok-6338432_1280.jpg" alt="TikTok">
+      <span class="tooltip">Próximamente</span>
+    </div>
+  </div>
+</section>
+
+<script>
+  const toggle = document.getElementById("toggleModoOscuro");
+  toggle.addEventListener("change", () => {
+    document.body.classList.toggle("modo-oscuro");
+  });
+</script>
 </body>
 </html>

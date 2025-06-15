@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Promedios - Califica GO</title>
+  <link rel="stylesheet" href="/CSS/promedios.css" />
+</head>
+<body>
+
+  <header>
+    <h1><a class="logo" href="/HTML/index.html">Califica GO</a></h1>
+    <label class="switch">
+      <input type="checkbox" id="toggleModoOscuro" />
+      <span class="slider"></span>
+    </label>
+  </header>
+
+  <div class="flecha-volver">
+    <a href="javascript:history.back()">⬅ Volver</a>
+  </div>
+
+  <section class="content">
+    <h2>Calcula tu Promedio</h2>
+
+    <form id="nota-form">
+      <input type="text" id="asignatura" placeholder="Asignatura" required>
+      <input type="number" step="0.1" id="nota" placeholder="Nota (1.0 - 7.0)" required>
+      <input type="number" step="1" id="peso" placeholder="Porcentaje (%)" required>
+      <button type="submit">Añadir Nota</button>
+    </form>
+
+    <table id="tabla-notas">
+      <thead>
+        <tr>
+          <th>Asignatura</th>
+          <th>Nota</th>
+          <th>Peso (%)</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <div class="resultado">
+      <strong>Promedio final: </strong><span id="promedio">0.0</span>
+    </div>
+  </section>
+
+  <script>
+    const toggle = document.getElementById("toggleModoOscuro");
+    toggle.addEventListener("change", () => {
+      document.body.classList.toggle("modo-oscuro");
+    });
+
+    const form = document.getElementById("nota-form");
+    const tabla = document.querySelector("#tabla-notas tbody");
+    const promedioSpan = document.getElementById("promedio");
+
+    let total = 0;
+    let suma = 0;
+
+    form.addEventListener("submit", e => {
+      e.preventDefault();
+
+      const asignatura = document.getElementById("asignatura").value;
+      const nota = parseFloat(document.getElementById("nota").value);
+      const peso = parseFloat(document.getElementById("peso").value);
+
+      if (isNaN(nota) || isNaN(peso)) return;
+
+      const row = document.createElement("tr");
+      row.innerHTML = `<td>${asignatura}</td><td>${nota}</td><td>${peso}</td>`;
+      tabla.appendChild(row);
+
+      suma += nota * peso;
+      total += peso;
+
+      const promedio = total > 0 ? (suma / total).toFixed(2) : 0.0;
+      promedioSpan.textContent = promedio;
+
+      form.reset();
+    });
+  </script>
+
+</body>
+</html>

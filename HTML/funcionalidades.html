@@ -8,33 +8,55 @@
 <body>
 
   <header>
-    <nav>
-      <h1><a href="/HTML/index.html">Califica GO</a></h1>
-      <label class="switch">
+    <h1><a class="logo" href="/HTML/index.html">Califica GO</a></h1>
+    <label class="switch">
       <input type="checkbox" id="toggleModoOscuro">
       <span class="slider"></span>
     </label>
-    </nav>
   </header>
+  <div class="flecha-volver">
+  <a href="javascript:history.back()">⬅ Volver</a>
+</div>
 
   <section class="content">
-    <h2>¿Qué puedes hacer con Califica GO?</h2>
+  <h2>¿Qué puedes hacer con Califica GO?</h2>
 
-    <ul>
-      <li><strong>📌 Registrar tus calificaciones</strong>: agrega notas con nombre, fecha y porcentaje.</li>
-      <li><strong>📊 Calcular promedios al instante</strong>: sin cálculos manuales ni complicaciones.</li>
-      <li><strong>⏰ Recibir recordatorios</strong>: de pruebas, entregas o tareas importantes.</li>
-      <li><strong>🚨 Alertas de bajo rendimiento</strong>: si estás en riesgo de reprobar, la app te avisa.</li>
-      <li><strong>🧾 Generar reportes finales</strong>: obtén un resumen completo de tus notas del semestre.</li>
-      <li><strong>🎨 Personalizar la interfaz</strong>: cambia colores, modos y organiza tus materias como quieras.</li>
-    </ul>
-  </section>
- <script>
-  const toggle = document.getElementById("toggleModoOscuro");
+  <ul class="funcionalidades">
+    <!-- Botones funcionales -->
+    <li class="activo">
+      <a href="/HTML/horario.html">📌 Registrar tus calificaciones</a>
+    </li>
+    <li class="activo">
+      <a href="/HTML/promedios.html">📊 Calcular promedios al instante</a>
+    </li>
 
-  toggle.addEventListener("change", () => {
-    document.body.classList.toggle("modo-oscuro");
-  });
-</script>
+    <!-- Funcionalidades futuras -->
+    <li class="proximamente">
+      ⏰ Recibir recordatorios
+      <span class="mensaje">Próximamente</span>
+    </li>
+    <li class="proximamente">
+      🚨 Alertas de bajo rendimiento
+      <span class="mensaje">Próximamente</span>
+    </li>
+    <li class="proximamente">
+      🧾 Generar reportes finales
+      <span class="mensaje">Próximamente</span>
+    </li>
+    <li class="proximamente">
+      🎨 Personalizar la interfaz
+      <span class="mensaje">Próximamente</span>
+    </li>
+  </ul>
+</section>
+
+
+  <script>
+    const toggle = document.getElementById("toggleModoOscuro");
+    toggle.addEventListener("change", () => {
+      document.body.classList.toggle("modo-oscuro");
+    });
+  </script>
+
 </body>
 </html>
