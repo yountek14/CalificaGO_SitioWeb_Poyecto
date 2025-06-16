@@ -1,4 +1,3 @@
-/* Reset y base */
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
@@ -7,7 +6,6 @@ body {
   color: #333;
 }
 
-/* Header con logo centrado y switch a la derecha */
 header {
   background-color: #5c6bc0;
   padding: 1px;
@@ -28,7 +26,8 @@ header {
   text-decoration: none;
 }
 
-/* Switch toggle */
+
+
 .switch {
   position: absolute;
   top: 50%;
@@ -74,7 +73,8 @@ input:checked + .slider::before {
   transform: translateX(24px);
 }
 
-/* Contenido */
+
+
 .content {
   max-width: 1000px;
   margin: auto;
@@ -86,7 +86,8 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* Lista de funcionalidades */
+
+
 ul {
   list-style: none;
   padding-left: 0;
@@ -102,7 +103,8 @@ ul li {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* 🌙 Modo oscuro */
+
+
 body.modo-oscuro {
   background-color: #121212;
   color: #e0e0e0;
@@ -116,7 +118,8 @@ body.modo-oscuro ul li {
   background-color: #333;
   border-left-color: #555;
 }
-/* Botones activos */
+
+
 ul.funcionalidades li.activo {
   background-color: #4caf50;
   padding: 15px;
@@ -131,12 +134,14 @@ ul.funcionalidades li.activo a {
   display: block;
 }
 
-/* Hover en botones activos */
+
+
 ul.funcionalidades li.activo:hover {
   background-color: #43a047;
 }
 
-/* Elementos "Próximamente" */
+
+
 ul.funcionalidades li.proximamente {
   position: relative;
   background: #5c6bc0;
@@ -167,7 +172,8 @@ ul.funcionalidades li.proximamente:hover .mensaje {
   bottom: 0;
 }
 
-/* 🌙 Oscuro para los nuevos estilos */
+
+
 body.modo-oscuro ul.funcionalidades li.activo {
   background-color: #2e7d32;
   border-left-color: #1b5e20;

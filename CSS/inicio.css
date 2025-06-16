@@ -55,7 +55,7 @@ header h1 a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px; /* 👉 separación entre los botones */
+  gap: 20px; 
   margin-top: 30px;
 }
 
@@ -63,7 +63,7 @@ header h1 a {
   background-color: #3f51b5;
 }
 
-/* 🔘 Switch estilo toggle */
+
 .switch {
   position: absolute;
   top: 25px;
@@ -111,7 +111,8 @@ input:checked + .slider::before {
   transform: translateX(24px);
 }
 
-/* 🌙 Estilo del modo oscuro */
+
+
 body.modo-oscuro {
   background-color: #121212;
   color: #e0e0e0;

@@ -78,7 +78,7 @@ td:hover {
 }
 
 
-/* 🔘 Switch estilo toggle */
+
 .switch {
   position: absolute;
   top: 25px;
@@ -126,7 +126,8 @@ input:checked + .slider::before {
   transform: translateX(24px);
 }
 
-/* 🌙 Estilo del modo oscuro */
+
+
 body.modo-oscuro {
   background-color: #121212;
   color: #e0e0e0;

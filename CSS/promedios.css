@@ -131,7 +131,8 @@ table th, table td {
   text-align: right;
 }
 
-/* Modo oscuro */
+
+
 body.modo-oscuro {
   background-color: #121212;
   color: #e0e0e0;
